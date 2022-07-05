@@ -5,7 +5,7 @@ const {
   updateStatus,
   updateCarsLocation,
   destroyCar,
-} = require('../services/UserService');
+} = require('../services/CarService');
 
 class CarController {
   async getInUseWithLowFuel(req, res) {

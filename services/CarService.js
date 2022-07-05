@@ -1,7 +1,7 @@
 const {Car, Run, Driver, Booking} = require('../models');
 const {Op, Sequelize} = require('sequelize');
 
-class UserService {
+class CarService {
 	async findCarsInUseWithLowFuel(){
 		const cars = await Car.findAll({
 			where: {
@@ -110,4 +110,4 @@ class UserService {
 	}
 }
 
-module.exports = new UserService();
+module.exports = new CarService();
